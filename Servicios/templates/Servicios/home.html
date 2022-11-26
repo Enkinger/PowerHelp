@@ -1,0 +1,30 @@
+{% extends "./base.html" %}
+
+{% block body%}
+{% load crispy_forms_filters %}
+{% load crispy_forms_tags %}
+<!--Inputs de solicitud-->
+<div class="container">
+  <div class="mt-4">
+  <form action="" class="card" method="POST">
+    <legend class="card-header">Crea un servicio</legend>
+    <div class="continer px-4">
+      
+    </br> 
+      {% csrf_token %}
+
+      {{ form | crispy }}
+    </br>
+    <div class="d-flex justify-content-end" >
+    <button type="submit" class="btn btn-success" >Publicar</button>
+    </div>
+    &nbsp;
+    </div>
+    
+  </form>
+  {{mensaje}}
+  </div>
+</div>
+
+
+{% endblock%}

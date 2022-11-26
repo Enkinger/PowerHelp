@@ -1,0 +1,19 @@
+{% extends "./base.html" %}
+<!--Card for each-->
+{% for p in posts %}
+<div class="container mt-4">
+  <div class="card">
+      <div class="card-header">
+        Destacadas
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">{{p.nombre}}</h5>
+        <p class="card-text">{{p.correo}}</p>
+
+        <a href="#" class="btn btn-primary ">Contactar</a>
+      </div>
+    </div>
+</div>
+{% endfor %}
+
+{% endblock%}
