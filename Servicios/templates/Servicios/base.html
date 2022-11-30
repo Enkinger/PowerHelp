@@ -56,7 +56,22 @@
                     </svg>
                 </a>
               </li>
+              
             </ul>
+            <!--Mostrar Usuario-->
+            <div style="text-align: right; color: white;">
+              
+              {% if user.is_authenticated %}
+
+              Hola {{ user.username }} &nbsp;&nbsp; <a href="{% url 'cerrar_sesion' %}">Cerrar sesion</a>
+
+              {% else %}
+
+              <a href="{% url 'logear' %}">Login</a> &nbsp;&nbsp; <a href="{% url 'autenticacion' %}">Registrate</a>
+
+              {% endif %}
+
+            </div>
           </div>           
         </div>
       </nav>
