@@ -1,6 +1,4 @@
 # Primera version proyecto Power Help
-# Primer commit
-# Postear publicaciones
-# Segunda versionde Power Help
-# Segundo commit
-# Login Registro
+# Primer commit "Postear publicaciones"
+# Segundo commit "Login y Registro"
+# Tercer commit "Diseño"
