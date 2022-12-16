@@ -2,9 +2,9 @@ from django.db import models
 
 # Create your models here.
 opciones_clientes = [
-    ['Demandante','Demandante'],
+    ['No Profesional','No Profesional'],
     ['Profesional','Profesional'],
-    ['Emppresa','Empresa'],
+    ['Empresa','Empresa'],
     ['ONG`S','ONG`S'],
     
 ]

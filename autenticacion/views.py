@@ -21,7 +21,7 @@ class URegistro(View):
             
             login(request, usuario)
             
-            return redirect("Home")
+            return redirect("logear")
         
         else:
             for msg in form.error_messages:
@@ -33,7 +33,7 @@ class URegistro(View):
 def cerrar_sesion(request):
     logout(request)
     
-    return redirect("Home")
+    return redirect("logear")
 
 
 def logear(request):
@@ -53,4 +53,3 @@ def logear(request):
             
     form=AuthenticationForm()
     return render(request,"login/login.html", {"form":form})
-

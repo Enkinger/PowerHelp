@@ -4,14 +4,6 @@ from .forms import PostForm
 
 # Create your views here.
 
-def login(request):
-    return render(request, 'Servicios/login.html')
-
-
-def register(request):
-    return render(request, 'Servicios/register.html')
-
-
 def home(request):
     
     data = {
